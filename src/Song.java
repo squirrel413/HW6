@@ -16,6 +16,8 @@ public class Song {
 
     public int getTimesPlayed(){return this.timesPlayed;}
 
+    public void playSong(){this.timesPlayed++;}
+
     public String toString(){
         return name + ", " + artist;
     }
