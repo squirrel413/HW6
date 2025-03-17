@@ -1,6 +1,10 @@
 import java.util.*;
+import java.io.*;
 
-public class Jukebox<E> extends HashSet<E>{
+public class Jukebox<Record> extends HashSet<E>{
+
+    public static final int NO_SIMULATIONS = 50000;
+    public Random rand = new Random(0);
 
     public class Record<K,V>{
         private K key;
@@ -12,4 +16,19 @@ public class Jukebox<E> extends HashSet<E>{
         }
     }
 
+    private Jukebox<Record> readIn(String filename){
+
+    }
+
+    private void runSimulation(){
+
+    }
+
+    public static void main(String[] args){
+        if (args.length == 2){
+            new Jukebox<>().runSimulation();
+        } else {
+            System.out.println("Usage: java Jukebox filename seed");
+        }
+    }
 }
