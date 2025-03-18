@@ -4,6 +4,14 @@ import java.io.File;
 
 public class Jukebox<Record> {
 
+    /**
+     * This class handles running a simulation of playing a random song from a
+     * jukebox of some number of songs and counting how many songs must be played
+     * before a duplicate song is played.
+     * @author Nick Tibbels nst2038@gmail.com
+     * @author Sam Whitney shw9601@rit.edu
+     * */
+
     public static final int NO_SIMULATIONS = 50000;
     public Scanner sc;
     public ArrayList<Integer> songKeys = new ArrayList<>();
