@@ -19,7 +19,7 @@ public class Song {
     public void playSong(){this.timesPlayed++;}
 
     public String toString(){
-        return name + ", " + artist;
+        return "Artist: " + artist + ", Song: " + name;
     }
 
     public boolean equals(Song other){
