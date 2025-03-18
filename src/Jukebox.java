@@ -110,6 +110,7 @@ public class Jukebox<Record> {
         long end = System.currentTimeMillis();
         Song mostPlayedSong = getMostPlayedSong(records);
         System.out.println("Time elapsed: " + Math.divideExact((end-start),1000) + " seconds passed");
+        System.out.println("Simulations ran: " + NO_SIMULATIONS);
         System.out.println("Total songs played: " + totalSongsPlayed);
         System.out.println("Average number of songs played until duplicate: " + totalSongsPlayed / NO_SIMULATIONS);
         System.out.println("Most played song: " + mostPlayedSong.toString());
